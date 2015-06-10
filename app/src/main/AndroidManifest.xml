@@ -5,7 +5,7 @@
     <uses-sdk
         android:targetSdkVersion="23"
         android:minSdkVersion="16" />
-
+<!--Adding Comment-->
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
