@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lovebooks="http://schemas.android.com/apk/res-auto">
+    <!-- Share item -->
+    <item
+        android:id="@+id/menu_item_share"
+        android:title="Share"
+        lovebooks:actionProviderClass="android.support.v7.widget.ShareActionProvider"
+        lovebooks:showAsAction="ifRoom" />
+</menu>

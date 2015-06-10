@@ -1,0 +1,87 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffd6ffdb"
+    android:fillViewport="false"
+    android:nestedScrollingEnabled="true">
+
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:nestedScrollingEnabled="true">
+
+
+        <ImageView
+            android:id="@+id/full_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:layout_centerHorizontal="true"
+            android:nestedScrollingEnabled="true" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/full_image_view"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:nestedScrollingEnabled="true"
+            android:id="@+id/linearLayout"
+            android:layout_centerInParent="true">
+
+            <Button
+                android:id="@+id/trash_btn"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="Delete"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:id="@+id/public_library_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/public_library"
+                android:layout_below="@+id/trash_btn"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+            android:id="@+id/academic_library_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="@string/academic_library"
+                android:layout_below="@+id/trash_btn"
+                android:layout_toRightOf="@+id/public_library_btn" />
+
+            <Button
+                android:id="@+id/email_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="Email"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/trash_btn"
+                android:layout_toEndOf="@+id/trash_btn" />
+
+            <Button
+            android:id="@+id/amazon_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="@string/purchase"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/email_btn"
+                android:layout_toEndOf="@+id/email_btn" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>
+
+

@@ -1,0 +1,192 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffd6ffdb">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:id="@+id/textAppView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@dimen/abc_text_size_headline_material" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="68dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/textAppView"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:cropToPadding="false"
+        android:src="@drawable/ic_books" />
+
+    <LinearLayout
+        android:id="@+id/results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffd6ffdb"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+
+        <TextView
+            android:id="@+id/book_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff000000"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/abc_text_size_title_material"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/book_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffa13143"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/abc_text_size_subhead_material" />
+
+        <TextView
+            android:id="@+id/book_publisher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff592d94"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/abc_text_size_small_material" />
+
+        <TextView
+            android:id="@+id/book_isbn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff592d94"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/abc_text_size_small_material" />
+
+        <TextView
+            android:id="@+id/book_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff592d94"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/abc_text_size_small_material" />
+
+        <TextView
+            android:id="@+id/book_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff592d94"
+            android:textIsSelectable="true" />
+        <TextView
+            android:id="@+id/book_categories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff592d94"
+            android:textIsSelectable="true" />
+
+        <ImageView
+            android:id="@+id/thumb"
+            android:layout_width="146dp"
+            android:layout_height="233dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/thumb" />
+
+        <LinearLayout
+            android:id="@+id/star_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"></LinearLayout>
+
+        <TextView
+            android:id="@+id/book_rating_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff2d6994"
+            android:textIsSelectable="true"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/book_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff000000"
+            android:textIsSelectable="true" />
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/results"
+
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:text="@string/save" />
+
+        <Button
+            android:id="@+id/public_library_btn"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:text="@string/public_library" />
+
+        <Button
+            android:id="@+id/academic_library_btn"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:text="@string/academic_library" />
+
+        <Button
+            android:id="@+id/amazon_btn"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:text="@string/purchase" />
+
+        <Button
+            android:id="@+id/link_btn"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:text="@string/link" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+    </ScrollView>
+

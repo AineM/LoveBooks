@@ -1,0 +1,8 @@
+<paths>
+    <external-path
+        name="image"
+        path="Environment.getExternalStorageDirectory() + /Pictures/LoveBooks/" />
+    <external-path
+        name="LoveBooks"
+        path="Pictures/LoveBooks/" />
+</paths>

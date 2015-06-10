@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">LoveBooks</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_enter_book">EnterBook</string>
+    <string name="edit_TitleMessage">Enter Title</string>
+    <string name="hint_title">Enter Title</string>
+    <string name="edit_AuthorMessage">Enter Author</string>
+    <string name="hint_author">Enter Author</string>
+    <string name="edit_PublisherMessage">Enter Publisher</string>
+    <string name="hint_publisher">Enter Publisher</string>
+    <string name="edit_ISBNMessage">Enter ISBN</string>
+    <string name="hint_ISBN">Enter ISBN</string>
+    <string name="button_Search">Search</string>
+    <string name="cancel">Cancel</string>
+    <string name="button_Scan_ISBN">Scan ISBN</string>
+    <string name="activity_details">Book Details</string>
+    <string name="result_details">Book Details</string>
+    <string name="thumb">Book thumbnail</string>
+    <string name="link">GoogleBooks</string>
+    <string name="save">Save</string>
+    <string name="title_activity_scan_isbn">Results</string>
+    <string name="purchase">Amazon</string>
+    <string name="academic_library">Academic Library</string>
+    <string name="public_library">Public Library</string>
+    <string name="title_activity_view_images">ViewImages</string>
+    <string name="title_activity_search">Search</string>
+    <string name="app_info">Get book Info by scanning its barcode or entering its ISBN!</string>
+    <string name="title_activity_view_saved">Saved Books</string>
+    <string name="hello_world">Hello world!</string>
+
+
+</resources>

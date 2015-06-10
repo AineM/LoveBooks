@@ -1,0 +1,75 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffd6ffdb">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/full_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:id="@+id/email_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/full_image_view"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="106dp"
+            android:clickable="true"
+            android:text="Email" />
+
+        <Button
+            android:id="@+id/trash_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/public_library_btn"
+            android:layout_toStartOf="@+id/public_library_btn"
+            android:clickable="true"
+            android:text="Delete" />
+
+        <Button
+            android:id="@+id/public_library_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal"
+            android:layout_toLeftOf="@+id/email_btn"
+            android:layout_toStartOf="@+id/email_btn"
+            android:clickable="true"
+            android:text="@string/public_library" />
+
+        <Button
+            android:id="@+id/academic_library_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_toEndOf="@+id/amazon_btn"
+            android:layout_toRightOf="@+id/amazon_btn"
+            android:clickable="true"
+            android:text="@string/academic_library" />
+
+        <Button
+            android:id="@+id/amazon_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_column="8"
+            android:layout_gravity="center_horizontal"
+            android:layout_toEndOf="@+id/email_btn"
+            android:layout_toRightOf="@+id/email_btn"
+            android:clickable="true"
+            android:text="@string/purchase" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
